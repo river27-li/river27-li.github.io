@@ -231,7 +231,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2022/11/23/test/" target="_self">
         <div>
-          一级标题代码测试：```pyprint(“Hello”)``` 注意：这里因为我放在md文件中的，所以加上了\，不解析```，实际测试时请去掉\。 图片测试：  引用测试：  这是一条引用  二级标题无序列表测试：  哈哈 嘿嘿 吼吼  三级标题四级标题
+          一级标题代码测试：1print(&quot;Hello&quot;) 注意：这里因为我放在md文件中的，所以加上了\，不解析```，实际测试时请去掉\。 图片测试：  引用测试：  这是一条引用  二级标题无序列表测试：  哈哈 嘿嘿 吼吼  三级标题四级标题
         </div>
       </a>
 
@@ -402,5 +402,20 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
